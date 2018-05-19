@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI; // we can write code for the canvas... the score text
-//using TMPro; 
 
 public class Ball : MonoBehaviour
 {
@@ -11,17 +10,10 @@ public class Ball : MonoBehaviour
 
     public Transform target;
 
-    public int scoreCount;
-    public Text scoreText;
-
     void Start()
     {
-        // Start Count
-        scoreCount = 0;
-        SetCountText();
-
         // Initial Velocity
-        GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
 
         // Keep the screen locked in Portrait
         Screen.orientation = ScreenOrientation.Portrait;
@@ -48,7 +40,6 @@ public class Ball : MonoBehaviour
         //   col.gameObject is the racket
         //   col.transform.position is the racket's position
         //   col.collider is the racket's collider
-
         
         // Hit the right Racket?
         if (col.gameObject.name == "RacketRight")
@@ -65,18 +56,7 @@ public class Ball : MonoBehaviour
             Vector2 dir = new Vector2(-1, y).normalized;
 
             // Set Velocity with dir * speed
-            GetComponent<Rigidbody2D>().velocity = dir * speed;
-
-            // UPDATE SCORE
-            scoreCount = scoreCount+1;
-            SetCountText();
-                       
+            GetComponent<Rigidbody2D>().velocity = dir * speed;                       
         }
-    }
-
-    void SetCountText()
-    {
-        scoreText.text = "" + scoreCount.ToString();
-    }
-      
+    }     
 }
