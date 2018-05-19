@@ -2147,8 +2147,6 @@ MonoBehaviour:
   speed: 20
   saw: {fileID: 8300000, guid: 706e8a8ebc75cba4b937a88a0706551a, type: 3}
   target: {fileID: 0}
-  scoreCount: 0
-  scoreText: {fileID: 1700443486}
 --- !u!50 &311421565
 Rigidbody2D:
   serializedVersion: 4
@@ -17949,6 +17947,7 @@ GameObject:
   - component: {fileID: 710556442}
   - component: {fileID: 710556441}
   - component: {fileID: 710556444}
+  - component: {fileID: 710556443}
   m_Layer: 0
   m_Name: RacketRight
   m_TagString: Untagged
@@ -18072,6 +18071,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &710556443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710556437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1dc26c4c19aaab49adbd15dc3bfccbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreCount: 0
+  scoreText: {fileID: 1700443486}
 --- !u!114 &710556444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23209,8 +23221,6 @@ MonoBehaviour:
   speed: 20
   saw: {fileID: 8300000, guid: 706e8a8ebc75cba4b937a88a0706551a, type: 3}
   target: {fileID: 0}
-  scoreCount: 0
-  scoreText: {fileID: 1700443486}
 --- !u!50 &831806998
 Rigidbody2D:
   serializedVersion: 4
@@ -24123,8 +24133,6 @@ MonoBehaviour:
   speed: 20
   saw: {fileID: 8300000, guid: 706e8a8ebc75cba4b937a88a0706551a, type: 3}
   target: {fileID: 872289267}
-  scoreCount: 0
-  scoreText: {fileID: 1700443486}
 --- !u!50 &975847055
 Rigidbody2D:
   serializedVersion: 4
@@ -29902,8 +29910,6 @@ MonoBehaviour:
   speed: 20
   saw: {fileID: 8300000, guid: 706e8a8ebc75cba4b937a88a0706551a, type: 3}
   target: {fileID: 0}
-  scoreCount: 0
-  scoreText: {fileID: 1700443486}
 --- !u!50 &1048841767
 Rigidbody2D:
   serializedVersion: 4
@@ -30997,8 +31003,6 @@ MonoBehaviour:
   speed: 20
   saw: {fileID: 8300000, guid: 706e8a8ebc75cba4b937a88a0706551a, type: 3}
   target: {fileID: 0}
-  scoreCount: 0
-  scoreText: {fileID: 1700443486}
 --- !u!50 &1180971022
 Rigidbody2D:
   serializedVersion: 4
@@ -31534,8 +31538,6 @@ MonoBehaviour:
   speed: 20
   saw: {fileID: 8300000, guid: 706e8a8ebc75cba4b937a88a0706551a, type: 3}
   target: {fileID: 0}
-  scoreCount: 0
-  scoreText: {fileID: 1700443486}
 --- !u!50 &1247180013
 Rigidbody2D:
   serializedVersion: 4
