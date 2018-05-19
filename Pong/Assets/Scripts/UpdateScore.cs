@@ -24,7 +24,6 @@ public class UpdateScore : MonoBehaviour
         // Hit the right Racket?
         if (col.gameObject)
         {
-
             // UPDATE SCORE
             scoreCount = scoreCount + 1;
             SetCountText();
