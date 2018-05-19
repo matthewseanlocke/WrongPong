@@ -11,17 +11,10 @@ public class Ball : MonoBehaviour
 
     public Transform target;
 
-    public int scoreCount;
-    public Text scoreText;
-
     void Start()
     {
-        // Start Count
-        scoreCount = 0;
-        SetCountText();
-
         // Initial Velocity
-        GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
 
         // Keep the screen locked in Portrait
         Screen.orientation = ScreenOrientation.Portrait;
@@ -67,16 +60,9 @@ public class Ball : MonoBehaviour
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed;
 
-            // UPDATE SCORE
-            scoreCount = scoreCount+1;
-            SetCountText();
-                       
+                      
         }
     }
 
-    void SetCountText()
-    {
-        scoreText.text = "" + scoreCount.ToString();
-    }
-      
+
 }
