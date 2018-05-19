@@ -23,14 +23,8 @@ public class Ball : MonoBehaviour
         // Initial Velocity
         GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
 
-
-        // is this how to start towards a target?
-        //float step = speed * Time.deltaTime;
-        //transform.position = Vector2.MoveTowards(transform.position, target.position, step);
-        
+        // Keep the screen locked in Portrait
         Screen.orientation = ScreenOrientation.Portrait;
-
-        //scoreCount = 0;
     }
 
     float hitFactor(Vector2 ballPos, Vector2 racketPos,

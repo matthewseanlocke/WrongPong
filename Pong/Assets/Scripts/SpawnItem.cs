@@ -6,6 +6,7 @@ public class SpawnItem : MonoBehaviour {
 
     public Transform[] SpawnPoints;
     public float spawnTime = 1.5f;
+    //public float speed = 120;
 
     //do we need initial speed? --> nope
     // public float speed = 120;
@@ -17,13 +18,13 @@ public class SpawnItem : MonoBehaviour {
 	void Start ()
     {
         InvokeRepeating("SpawnSperm", spawnTime, spawnTime);
-        
+
         // Do we need initial Velocity --> nope
         //GetComponent<Rigidbody2D>().velocity = Vector2.down * speed;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -34,5 +35,8 @@ public class SpawnItem : MonoBehaviour {
         int ObjectIndex = Random.Range(0, Sperm.Length);
 
         Instantiate(Sperm[ObjectIndex], SpawnPoints[spawnIndex].position, SpawnPoints[spawnIndex].rotation);
+
+
+
     }
 }
